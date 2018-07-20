@@ -5,10 +5,10 @@
     
     <body>
         
-    <!-- Exercicio 1
+    
     <button id="botao">Criar Elemento</button>
 
-    <div id="area"> -->
+    <div id="area">
 
 
         
@@ -16,23 +16,36 @@
         
     <script>               
 
-        // // Exercicio 1
-        // var btnElement = document.getElementById('botao');
-
-        // var divElement = document.body;
+        function getRandomColor() {
+        var letters = '0123456789ABCDEF';
+        var color = '#';
+        for (var i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+        }
         
-        // var areaElement = document.createElement('canvas');
+        // Exercicio 1
+        var btnElement = document.getElementById('botao');
 
-        // areaElement.style.width = 100;
-        // areaElement.style.height = 100;
-        // areaElement.style.backgroundColor = 'red';
+        btnElement.onclick = function(){
 
-        // btnElement.onclick = function(){
+            var divElement = document.body;
+            
+            var areaElement = document.createElement('canvas');
 
-        //     divElement.appendChild(areaElement);
-        // }
+            areaElement.style.width = 100;
+            areaElement.style.height = 100;
+            areaElement.style.margin = 10;
+            areaElement.style.backgroundColor = 'red';
+            areaElement.onmouseover = function () {
+                areaElement.style.backgroundColor = getRandomColor();
+            }
 
-            var teste = "";
+            divElement.appendChild(areaElement);
+
+        }
+// var newColor = getRandomColor(); // #E943F0
 
 
 
