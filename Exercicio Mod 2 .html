@@ -30,21 +30,37 @@
 
         btnElement.onclick = function(){
 
-            var divElement = document.body;
+            var divElement = document.getElementById('area');
             
-            var areaElement = document.createElement('canvas');
+            var canvasElement = document.createElement('canvas');
 
-            areaElement.style.width = 100;
-            areaElement.style.height = 100;
-            areaElement.style.margin = 10;
-            areaElement.style.backgroundColor = 'red';
-            areaElement.onmouseover = function () {
-                areaElement.style.backgroundColor = getRandomColor();
+            canvasElement.style.width = 100;
+            canvasElement.style.height = 100;
+            canvasElement.style.margin = 10;
+            canvasElement.style.backgroundColor = 'red';
+            canvasElement.onmouseover = function () {
+                canvasElement.style.backgroundColor = getRandomColor();
             }
 
-            divElement.appendChild(areaElement);
-
+            divElement.appendChild(canvasElement);
         }
+
+        var nomes = ['Diego', 'Gabriel', 'Lucas'];
+
+        var divElement = document.getElementById('area');
+
+        var ulElement = document.createElement('ul');
+
+        nomes.forEach(element => {
+            var liElement = document.createElement('li');
+            liElement.appendChild(document.createTextNode(element));
+            ulElement.appendChild(liElement);
+        });
+
+
+        divElement.appendChild(ulElement);
+
+
 // var newColor = getRandomColor(); // #E943F0
 
 
