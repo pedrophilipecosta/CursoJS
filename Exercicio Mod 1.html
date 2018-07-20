@@ -1,0 +1,149 @@
+<html>
+    <head>
+        <title>Curso JS</title>
+    </head>
+    
+    <body>
+        
+
+        <script>
+
+            // // 1 Exericio
+            // var endereco = {
+            // rua: 'Rua dos pinheiros',
+            // numero: 1293,
+            // bairro: 'Centro',
+            // cidade: 'São Paulo',
+            // uf: 'SP'
+            // };
+
+            // console.log("O usuário mora em " + endereco.cidade + " / " + endereco.uf + ", na rua \"" + endereco.rua + "\" com nº " + endereco.numero  );
+                
+            // // 2 Exercicio
+            // function pares(x, y) {
+            //     for (x; x <= y; x++){
+            //         if (x % 2 == 0) {
+            //             console.log(x);  
+            //         }
+            //     }
+            // }
+
+            // pares(32, 321);
+
+            // // 3 Exercicio
+            // function temHabilidade(skills) {
+            // // código aqui
+            // var check = false;
+            //     skills.forEach(element => {
+                    
+            //         if (element == "Javascript") {
+            //             check = true;
+            //         }
+            //     });
+
+            // return check;
+            // }
+
+            // var skills = ['Javascript', 'ReactJS', 'React Native'];
+
+            // console.log(
+            //  temHabilidade(skills)); // true ou false
+
+            // // 4 Exercicio
+            // function experiencia(anos) {
+            //     switch (anos) {
+            //         case 0:
+            //         case 1:
+            //             return "Iniciante";
+            //             break;
+            //         case 2:
+            //         case 3:
+            //             return "Intermediário";
+            //             break;
+            //         case 4:
+            //         case 5:
+            //         case 6:
+            //             return "Avançado";
+            //             break;                                     
+                
+            //         default:
+            //             return "Jedi Master";
+            //             break;
+            //     }
+            // }
+
+            // var anosEstudo = 7;
+            // console.log(experiencia(anosEstudo));
+
+            // // 5 Exercicio
+            // var usuarios = [
+            //                 {
+            //                     nome: 'Diego',
+            //                     habilidades: ['Javascript', 'ReactJS', 'Redux']
+            //                 },
+            //                 {
+            //                     nome: 'Gabriel',
+            //                     habilidades: ['VueJS', 'Ruby on Rails', 'Elixir']
+            //                 }
+            //                 ];
+
+            //                 // O Diego possui as habilidades: Javascript, ReactJS, Redux
+            //                 // O Gabriel possui as habilidades: VueJS, Ruby on Rails, Elixir
+
+            //                 usuarios.map(element => {
+                                
+            //                     var hab = "";
+            //                     element.habilidades.forEach(habilidade => {
+            //                         if (hab == "") {
+            //                             hab = habilidade;
+            //                         } else {
+            //                             hab = hab + ", " + habilidade;  
+            //                         } 
+            //                     })
+
+            //                     console.log("O " + element.nome + " possui as habilidades: " + hab );
+            //                 });
+
+            
+            // // Exercicio 6
+            // function countdown(minutos) {
+            
+            // TotalSegundos = minutos * 60;
+
+            // setInterval(function(){
+
+            //     var _segundo = TotalSegundos % 60;
+            //     var _minuto = (TotalSegundos / 60) % 60 ;
+            //     var _hora = ((TotalSegundos / 60) / 60);
+                
+            //     _hora = parseInt(_hora);
+            //     _minuto = parseInt(_minuto);
+            //     _segundo = parseInt(_segundo)
+
+            //     // console.log(parseInt(_hora) + ' horas, ' + parseInt(_minuto) + ' minutos e ' + parseInt(_segundo) + ' segundos');
+                
+            //     if (_hora < 10) {
+            //         _hora = "0" + _hora
+            //     }
+
+            //     if (_minuto < 10) {
+            //         _minuto = "0" + _minuto
+            //     }
+
+            //     if (_segundo < 10) {
+            //         _segundo = "0" + _segundo
+            //     }
+
+            //     console.log(_hora + ":" + _minuto + ":" + _segundo);
+                
+            //     TotalSegundos -= 1;
+
+            // },1000);
+            // }
+
+            // countdown(2400);                 
+
+        </script>
+    </body>
+</html>
+
